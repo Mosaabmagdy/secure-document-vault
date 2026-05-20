@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>2FA Setup</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Enable 2FA</h2>
+
+    <button onclick="generate2FA()">
+        Generate QR Code
+    </button>
+
+    <br><br>
+
+    <img
+        id="qr"
+        width="200"
+    >
+
+    <br><br>
+
+    <input
+        type="text"
+        id="otp"
+        placeholder="Enter OTP"
+    >
+
+    <button onclick="verify2FA()">
+        Verify OTP
+    </button>
+
+</div>
+
+<script src="js/2fa.js"></script>
+
+</body>
+
+</html>

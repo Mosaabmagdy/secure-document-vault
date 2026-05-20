@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Dashboard</h1>
+
+    <a href="upload.html">
+
+        <button>
+            Upload File
+        </button>
+
+    </a>
+
+    <br><br>
+
+    <a href="admin.html">
+
+        <button>
+            Admin Panel
+        </button>
+
+    </a>
+    <a href="2fa.html">
+
+    <button>
+        Enable 2FA
+    </button>
+
+</a>
+
+</div>
+<script>
+
+const params = new URLSearchParams(
+    window.location.search
+);
+
+const token = params.get('token');
+
+if (token) {
+
+    localStorage.setItem(
+        'token',
+        token
+    );
+}
+
+</script>
+
+</body>
+
+</html>

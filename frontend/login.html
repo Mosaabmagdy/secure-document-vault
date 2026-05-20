@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Login</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>Login</h2>
+
+    <input
+        type="email"
+        id="email"
+        placeholder="Email"
+    >
+
+    <input
+        type="password"
+        id="password"
+        placeholder="Password"
+    >
+
+    <input
+        type="text"
+        id="otp"
+        placeholder="OTP Code"
+    >
+
+    <button onclick="login()">
+        Login
+    </button>
+
+    <br><br>
+
+<a href="https://localhost:5000/api/auth/google">
+        <button
+            type="button"
+            class="google-btn"
+        >
+            Login With Google
+        </button>
+
+    </a>
+
+</div>
+
+<script src="js/auth.js"></script>
+
+</body>
+
+</html>
